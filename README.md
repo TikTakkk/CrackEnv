@@ -37,18 +37,37 @@ Il identifie et formate automatiquement les fuites potentielles de **bases de do
 
 ## 🧩 Structure du projet
 
+```
 CrackEnv/
-├─ crackenv_no_proxy.py # Scanner principal (sans proxy)
-├─ formatter.py # Formatte les résultats après le scan
-├─ requirements.txt # Dépendances Python
-├─ README.md # Documentation
-├─ LICENSE # Licence MIT
+├─ crackenv_no_proxy.py      # Scanner principal (sans proxy)
+├─ formatter.py              # Formatte les résultats après le scan
+├─ requirements.txt          # Dépendances Python
+├─ README.md                 # Documentation
+├─ LICENSE                   # Licence MIT
 ├─ .gitignore
 └─ results_scan_envs/
-├─ db/
-├─ smtp/
-├─ aws/
-├─ stripe/
-└─ shopify/
+   ├─ db/
+   ├─ smtp/
+   ├─ aws/
+   ├─ stripe/
+   └─ shopify/
+   
+```
+---
 
+## 🧰 Technologies utilisées
 
+- 🐍 **Python 3.8+**
+- 🌐 **aiohttp** – pour les requêtes HTTP asynchrones rapides
+- 🧠 **Regex** – pour détecter les variables sensibles dans les fichiers `.env`
+- 📁 **Système de fichiers automatique** – pour trier et enregistrer les résultats dans les bons dossiers
+- ⚙️ **Formatage structuré** – pour rendre les données lisibles et exploitables
+
+---
+
+## 🚀 Installation rapide
+
+### 1️⃣ Cloner le dépôt
+```
+git clone https://github.com/TikTakkk/CrackEnv.git
+cd CrackEnv
